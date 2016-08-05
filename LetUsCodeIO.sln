@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetUsCodeIO", "LetUsCodeIO\LetUsCodeIO.csproj", "{3FCDF0F4-B702-490C-8C56-CE1F3C528221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetUsCodeIO.Tests", "LetUsCodeIO.Tests\LetUsCodeIO.Tests.csproj", "{2D9CD1E8-BB57-4887-85D0-C51124CB6A42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeViewerAndriod", "CodeViewerAndriod\CodeViewerAndriod.csproj", "{BCA625BC-6277-4D92-A8F6-00415F030D3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FCDF0F4-B702-490C-8C56-CE1F3C528221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FCDF0F4-B702-490C-8C56-CE1F3C528221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FCDF0F4-B702-490C-8C56-CE1F3C528221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FCDF0F4-B702-490C-8C56-CE1F3C528221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9CD1E8-BB57-4887-85D0-C51124CB6A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9CD1E8-BB57-4887-85D0-C51124CB6A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9CD1E8-BB57-4887-85D0-C51124CB6A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9CD1E8-BB57-4887-85D0-C51124CB6A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCA625BC-6277-4D92-A8F6-00415F030D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCA625BC-6277-4D92-A8F6-00415F030D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCA625BC-6277-4D92-A8F6-00415F030D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCA625BC-6277-4D92-A8F6-00415F030D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
