@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LESSONS>
+  <PLAN Name="flashcards">
+    <GOAL>Lets help Ella find out information about animals.  Ella needs to memorize four facts about each animal.  
+      As one of her friends you have to only need to find out one fact.</GOAL>
+    <LOCATIONS>
+      <LOCATION>
+        <LOCATION Name="Stamford Inovation Center May 3rd">http://stamfordicenter.com</LOCATION>
+        <LOCATION Name="@@CTStemFest May 14th">http://www.stemfest.us</LOCATION>
+      </LOCATION>
+    </LOCATIONS>
+    <ITEMS>
+      <ITEM>1) Get a flash card that Ella has made</ITEM>
+      <ITEM>2) Turn over the card and add your name so she knows who to thank</ITEM>
+      <ITEM>3) If you need to ask a parent to help you look up a fact about the animal</ITEM>
+      <ITEM>4) Fill out the back of the card with the new fact</ITEM>
+      <ITEM>5) Give your card to one of the volunteers at Let Us Code!</ITEM>
+      <ITEM>6) Ask them if you can help to upload the data to the server so Ella can get it to test</ITEM>
+    </ITEMS>
+  </PLAN>
+</LESSONS>

@@ -1,0 +1,40 @@
+﻿@model LetUsCodeIO.Models.FlashCardModels
+@{
+    ViewBag.Title = "FlashCards";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="~/Content/flashcards/script.js"></script>
+<link href="~/Content/flashcards/runnable.css" rel="stylesheet" />
+<br />
+<h2>FlashCards</h2>
+<br />
+
+<center>
+    <div id="f1_container">
+        <div id="f1_card">
+            
+            <div id="question-acts">
+                <h2 style="color:#E0162B">What Animal am I?</h2>
+                <ul class="list-group" style="color:#0052A5">
+                    <li class="list-group-item list-group-item-text">@Model.Clue1</li>
+                    <li class="list-group-item list-group-item-text">@Model.Clue2</li>
+                    <li class="list-group-item list-group-item-text">@Model.Clue3</li>
+                    <li class="list-group-item list-group-item-text">@Model.Clue4</li>
+                </ul>
+            </div>
+            <div id="backcard">
+                <h2 style="color:#E0162B">@Model.DisplayName</h2>
+                <p>
+                    <img src="~/Content/flashcards/@Model.FileName" alt="Polar Bear" />
+                </p>
+            </div>
+           
+        </div>
+        
+    </div>
+    <button id="BtnPrev" style="text-align:left;" onclick="GetAnimal('@Model.Previous')">Provous</button>
+    <button id="question" style="display: none;">Facts</button>
+    <button id="answer">Reveal</button>
+    <button id="BtnNext" style="text-align:right;" onclick="GetAnimal('@Model.Next')">Next</button>
+</center>

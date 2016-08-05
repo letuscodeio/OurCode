@@ -1,0 +1,72 @@
+﻿@using Microsoft.AspNet.Identity
+<div id="div-nav-right">
+    <div id="div-nav-right-contact">
+        <a href="https://twitter.com/OurCo_de" target="_blank">
+            <img height="16" alt="Facebook" src="" class="maintwitter-logo-hd-png-03" />
+           
+        </a>
+        &nbsp;
+        <a href="https://www.facebook.com/letuscodeio" target="_blank">
+            <img height="16" alt="Facebook" src="" class="mainfacebook" />
+        </a>
+        &nbsp;
+        <a href="mailto:info@ourco.de">
+            <img height="16" src="" alt="Contact LetUsCode" class="mainemail-small" />
+        </a>
+    </div>
+    @if (Request.IsAuthenticated)
+    {
+        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>
+        }
+    }
+    else
+    {
+        <div id="div-right-menu">
+            <div id="div-inner-right-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--<li><a asp-controller="Account" asp-action="Register">Register</a></li>
+                    <li><a asp-controller="Account" asp-action="Login">Log in</a></li>-->
+                    <!-- DropDown example -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown">Create<span class="caret"></span></a>
+                        <ul id="menu-subitems" class="dropdown-menu" role="menu">
+                            <li><a asp-controller="Create" asp-action="LessonPlans" href="~/Create/LessonPlans/?task=flashards">Flash Cards</a></li>
+                            <li><a href="#">Our Day</a></li>
+                            <li><a asp-controller="Create" asp-action="Index" href="~/Create/Index">View All</a></li>
+                        </ul>
+                    </li>
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown">Features<span class="caret"></span></a>
+                        <ul id="menu-subitems" class="dropdown-menu" role="menu">
+                            <li><a href="~/Features/FlashCards">Flash Cards</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle"
+                           data-toggle="dropdown">About<span class="caret"></span></a>
+                        <ul id="menu-subitems" class="dropdown-menu" role="menu">
+                            <li><a href="~/About">Our Code</a></li>
+                            <li><a href="~/About/OurPartners">Our Partners</a></li>
+                            <li><a href="~/About/Presentation">Presentation</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="~/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    }
+
+</div>

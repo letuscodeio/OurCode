@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CREATE>
+  <TASKS>
+    <TASK Name="flashcards" Icon="Content/images/animal-flashcards-penguin.png" 
+          LinkUrl="" LinkValue="" Title="Flash Cards">
+      I have started already to create a flash card game for LetUsCode.  
+      I need your help gathering information on each animal.  
+      We will take the information that you gather and load the information into the internet.
+    </TASK>
+     <TASK Name="ourday" Icon="Content/images/ourday.png" 
+          LinkUrl="" LinkValue="" Title="Our Day">
+    We will take pieces from our day together and build an html page together.
+    </TASK>
+  </TASKS>
+</CREATE>

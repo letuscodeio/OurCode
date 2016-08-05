@@ -1,0 +1,43 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.maincreate-banner, .mainfeatures-banner, .maininit-banner-1, .mainlogo-jpg, .mainlogo, 
+.main14th, .main3rd, .mainlogo-small, .mainella, .mainemail-small, 
+.maintwitter-logo-hd-png-03, .mainfacebook
+{ display: inline-block; background: url('/Content/images/main-sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.maincreate-banner { background-position: -0px -0px; width: 1140px; height: 360px; }
+.mainfeatures-banner { background-position: -0px -360px; width: 1140px; height: 360px; }
+.maininit-banner-1 { background-position: -0px -720px; width: 1140px; height: 400px; }
+.mainlogo-jpg { background-position: -0px -1120px; width: 284px; height: 90px; }
+.mainlogo { background-position: -284px -1120px; width: 284px; height: 90px; }
+.main14th { background-position: -568px -1120px; width: 135px; height: 126px; }
+.main3rd { background-position: -703px -1120px; width: 135px; height: 126px; }
+.mainlogo-small { background-position: -838px -1120px; width: 134px; height: 50px; }
+.mainella { background-position: -972px -1120px; width: 80px; height: 100px; }
+.mainemail-small { background-position: -1052px -1120px; width: 20px; height: 20px; }
+.maintwitter-logo-hd-png-03 { background-position: -1072px -1120px; width: 16px; height: 16px; }
+.mainfacebook { background-position: -1088px -1120px; width: 16px; height: 16px; }

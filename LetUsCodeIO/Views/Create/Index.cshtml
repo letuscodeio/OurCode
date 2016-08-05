@@ -1,0 +1,26 @@
+﻿@using LetUsCodeIO.Models
+
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <h2 style="color:#E0162B">All Lesson Plans</h2>
+
+@foreach (CreateModels item in Model)
+{
+    
+    <div class="row" style="border: 1px solid; border-color: #0052A5 ">
+        <div class="col-md-2">
+            <h4 style="color:#E0162B">@item.Title</h4>
+            <a> <img src="@item.Icon" alt="@item.LinkValue" /> </a>
+        </div>
+        <div class="co-md-2">
+            <br />
+            <p>
+                @item.Description
+            </p>
+        </div>
+    </div>
+}
+

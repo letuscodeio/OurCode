@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Lesson Plan";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="~/Content/flashcards/script.js"></script>
+<link href="~/Content/flashcards/runnable.css" rel="stylesheet" />
+<h2>Lesson Plan</h2>
+<br />
+<div class="row">
+    <ul class="list-group">
+        <li class="list-group-item active">Flashcards</li>
+        <li class="list-group-item list-group-item-heading">
+            <img src="~/Content/images/ella.png" height="100" width="80" />  Lets help Ella find out information about animals. Ella needs to memorize four facts about each animal.
+            As one of her friends you only need to find out one fact.
+        </li>
+        <li class="list-group-item list-group-item-text">
+            Materials - Index cards of animals
+        </li>
+        <li class="list-group-item list-group-item-text">
+            <a href="http://stamfordicenter.com/">Stamford Inovation Center May 3rd</a>
+            <br />
+            <a href="http://www.stemfest.us/">@@CTStemFest May 14th</a>
+        </li>
+    </ul>
+    <ol class="list-group">
+        <li class="list-group-item active">Instructions</li>
+        <li class="list-group-item list-group-item-info">1) Get a flash card that Ella has made</li>
+        <li class="list-group-item list-group-item-info">2) Turn over the card and add your name so she knows who to thank</li>
+        <li class="list-group-item list-group-item-info">3) If you need to ask a parent to help you look up a fact about the animal</li>
+        <li class="list-group-item list-group-item-info">4) Fill out the back of the card with the new fact</li>
+        <li class="list-group-item list-group-item-info">5) Give your card to one of the volunteers at Let Us Code!</li>
+        <li class="list-group-item list-group-item-info">6) Ask them if you can help to upload the data to the server so Ella can get it to test</li>
+
+    </ol>
+    <ol class="list-group">
+        <li class="list-group-item active">Sample Flashcard</li>
+        <li class="list-group-item list-group-item-text">
+            <center>
+                <div id="f1_container">
+                    <div id="f1_card">
+                        <div id="question-acts">
+                            <h2 style="color:#E0162B">What Animal am I?</h2>
+                            <ul class="list-group" style="color:#0052A5">
+                                <li class="list-group-item list-group-item-text">Has Black skin</li>
+                                <li class="list-group-item list-group-item-text">Its fur is hollow</li>
+                                <li class="list-group-item list-group-item-text">Largly lives within the Arctic Circle</li>
+                                <li class="list-group-item list-group-item-text">Males can weigh up to 1,500 lbs</li>
+                            </ul>
+                        </div>
+                        <div id="backcard">
+                            <h2 style="color:#E0162B">Polar Bear</h2>
+                            <p>
+                                <img src="~/Content/flashcards/PolarBear.png" alt="Polar Bear" />
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <button id="question" style="display: none;">Facts</button>
+                <button id="answer">Reveal</button>
+            </center>
+            </li>
+</ol>
+        
+</div>
